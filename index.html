@@ -17,6 +17,13 @@
                 linear-gradient(to bottom, rgba(200, 200, 200, 0.1) 1px, transparent 1px);
             background-size: 20px 20px;
         }
+        /* Styles for the modal transition */
+        #project-modal {
+            transition: opacity 0.3s ease-in-out;
+        }
+        #project-modal > div {
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white antialiased">
@@ -91,74 +98,56 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Project Card 1 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/111827/3b82f6?text=Project+One" alt="Project One" class="w-full h-48 object-cover">
-                        <div class="p-6">
+                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/WirelessTeleoperationTech.jpg?raw=true" alt="Project One" class="w-full h-48 object-cover pointer-events-none">
+                        <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Wireless Teleoperation Technology</h3>
                             <p class="text-gray-400 mb-4">A technology where two cobots are controlled with two seperate arms connected within same network.</p>
-                            <div class="flex space-x-4">
-                                <a href="#" class="text-blue-400 hover:text-blue-300">View Demo</a>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Project Card 2 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/111827/3b82f6?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
-                        <div class="p-6">
+                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/ForceDetectionROS.jpg?raw=true" alt="Project Two" class="w-full h-48 object-cover pointer-events-none">
+                        <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Force Detection with ROS</h3>
                             <p class="text-gray-400 mb-4">Process with Torque sensor which runs with a constant force</p>
-                             <div class="flex space-x-4">
-                                <a href="#" class="text-blue-400 hover:text-blue-300">View Demo</a>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Project Card 3 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/111827/3b82f6?text=Project+Three" alt="Project Three" class="w-full h-48 object-cover">
-                        <div class="p-6">
+                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/EAIBOTxArm6.png?raw=true" alt="Project Three" class="w-full h-48 object-cover pointer-events-none">
+                        <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Eaibot SMART Base with UFactory xArm 6</h3>
                             <p class="text-gray-400 mb-4">Two different robotic company integrating an application found in Amazon Warehouse</p>
-                             <div class="flex space-x-4">
-                                <a href="#" class="text-blue-400 hover:text-blue-300">View Demo</a>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Project Card 4 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/111827/3b82f6?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
-                        <div class="p-6">
+                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/ColorSizeSorting.jpg?raw=true" alt="Project Four" class="w-full h-48 object-cover pointer-events-none">
+                        <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Color and Size Sorting with ROS and Python API</h3>
                             <p class="text-gray-400 mb-4">Dobot and UFactory integrates to sort the objects with a camera</p>
-                             <div class="flex space-x-4">
-                                <a href="#" class="text-blue-400 hover:text-blue-300">View Demo</a>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Project Card 5 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/111827/3b82f6?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
-                        <div class="p-6">
+                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/LocalRemoteDesktopApplication.jpg?raw=true" alt="Project Five" class="w-full h-48 object-cover pointer-events-none">
+                        <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Local Network Remote Desktop Application</h3>
                             <p class="text-gray-400 mb-4">An Application which enables a remote desktop computing within the same network</p>
-                             <div class="flex space-x-4">
-                                <a href="#" class="text-blue-400 hover:text-blue-300">View Demo</a>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Project Card 6 -->
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/111827/3b82f6?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
-                        <div class="p-6">
+                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer">
+                        <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/DataMonitoringDashboard.png?raw=true" alt="Project Six" class="w-full h-48 object-cover pointer-events-none">
+                        <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Data Logging Application</h3>
                             <p class="text-gray-400 mb-4">An Application which logs the data sent by PLC and displays it in a dashboard</p>
-                             <div class="flex space-x-4">
-                                <a href="#" class="text-blue-400 hover:text-blue-300">View Demo</a>
-                            </div>
                         </div>
                     </div>                    
 
@@ -221,6 +210,23 @@
         </div>
     </footer>
 
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden opacity-0">
+        <div class="bg-gray-800 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row overflow-hidden scale-95 transform">
+            <!-- Modal Image -->
+            <div class="w-full md:w-1/2">
+                <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+            </div>
+            <!-- Modal Content -->
+            <div class="w-full md:w-1/2 p-8 flex flex-col">
+                <h3 id="modal-title" class="text-2xl font-bold mb-4"></h3>
+                <p id="modal-description" class="text-gray-300 flex-grow"></p>
+                <button id="close-modal-button" class="self-start mt-6 text-blue-400 hover:text-blue-300 font-semibold">Close</button>
+            </div>
+        </div>
+    </div>
+
+
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
@@ -238,6 +244,62 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // Project Modal Logic
+        const projectCards = document.querySelectorAll('.project-card');
+        const modal = document.getElementById('project-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const closeModalButton = document.getElementById('close-modal-button');
+
+        const openModal = (card) => {
+            // Extract data from the clicked card
+            const imgSrc = card.querySelector('img').src;
+            const title = card.querySelector('h3').innerText;
+            const description = card.querySelector('p').innerText;
+
+            // Populate the modal
+            modalImg.src = imgSrc;
+            modalTitle.innerText = title;
+            modalDescription.innerText = description;
+
+            // Show the modal with a transition
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('div').classList.remove('scale-95');
+            }, 10); // A tiny delay to ensure the transition works
+        };
+
+        const closeModal = () => {
+             // Hide the modal with a transition
+            modal.classList.add('opacity-0');
+            modal.querySelector('div').classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300); // Match the transition duration
+        };
+
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => openModal(card));
+        });
+
+        closeModalButton.addEventListener('click', closeModal);
+
+        // Close modal when clicking on the background overlay
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with the Escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
         });
     </script>
 </body>
