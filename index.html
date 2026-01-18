@@ -49,7 +49,7 @@
             animation: shine 3s infinite;
         }
         
-        /* Ribbon Utility - Updated for center-corner alignment */
+        /* Ribbon Utility */
         .ribbon-container {
             position: absolute;
             top: 28px;
@@ -141,53 +141,72 @@
                 <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
-                    <!-- Project Card 1 WITH ALIGNED RUNNER UP BADGE -->
-                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
+                    <!-- Card 1 -->
+                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal"
+                         data-video-src="https://github.com/Koushikraj-2005/skoushikraj.github.io/raw/main/ReemRover.mp4">
                         <div class="ribbon-container bg-yellow-500 text-gray-900 font-bold py-1 text-[10px] uppercase tracking-widest text-center">
                             <span class="relative z-20">Runner Up</span>
                             <div class="absolute inset-0 shine-effect opacity-30"></div>
                         </div>
-                        
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/RoverFromTrash.jpg?raw=true" alt="Project One" class="w-full h-48 object-cover pointer-events-none">
-                        <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Rover from Trash - SPACE Club</h3>
-                            <p class="text-gray-400 mb-4">During the period of COVID, we the students were pursuing online classess. During the summer break, our SPACE club introduced a challenge where we need to make a rover with only the parts from our home and should not be a working model.</p>
+                        <div class="p-6 pointer-events-none flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Rover from Trash - SPACE Club</h3>
+                                <p class="text-gray-400 mb-4">Space Club challenge during COVID summer break.</p>
+                            </div>
+                            <i data-lucide="video" class="text-blue-400 w-5 h-5 flex-shrink-0 mt-1"></i>
                         </div>
                     </div>
 
-                    <!-- Project Card 2 -->
-                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
+                    <!-- Card 2 -->
+                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal"
+                         data-video-src="https://github.com/Koushikraj-2005/skoushikraj.github.io/raw/main/WirelessTeleoperation.mp4">
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/WirelessTeleoperationTech.jpg?raw=true" alt="Project Two" class="w-full h-48 object-cover pointer-events-none">
-                        <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Wireless Teleoperation Technology</h3>
-                            <p class="text-gray-400 mb-4">A technology where two cobots are controlled with two seperate arms connected within same network.</p>
+                        <div class="p-6 pointer-events-none flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Wireless Teleoperation Technology</h3>
+                                <p class="text-gray-400 mb-4">Two cobots controlled via separate arms connected within same network.</p>
+                            </div>
+                            <i data-lucide="video" class="text-blue-400 w-5 h-5 flex-shrink-0 mt-1"></i>
                         </div>
                     </div>
 
-                    <!-- Project Card 3 -->
-                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
+                    <!-- Card 3 -->
+                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal"
+                         data-video-src="https://github.com/Koushikraj-2005/skoushikraj.github.io/raw/main/ForceDetection.mp4">
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/ForceDetectionROS.jpg?raw=true" alt="Project Three" class="w-full h-48 object-cover pointer-events-none">
-                        <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Force Detection with ROS</h3>
-                            <p class="text-gray-400 mb-4">Process with Torque sensor which runs with a constant force</p>
+                        <div class="p-6 pointer-events-none flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Force Detection with ROS</h3>
+                                <p class="text-gray-400 mb-4">Process with Torque sensor which runs with a constant force</p>
+                            </div>
+                            <i data-lucide="video" class="text-blue-400 w-5 h-5 flex-shrink-0 mt-1"></i>
                         </div>
                     </div>
 
-                    <!-- Project Card 4 -->
-                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
+                    <!-- Card 4 -->
+                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal"
+                         data-video-src="https://github.com/Koushikraj-2005/skoushikraj.github.io/raw/main/SmartBaseNavigation.mp4">
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/EAIBOTxArm6.png?raw=true" alt="Project Four" class="w-full h-48 object-cover pointer-events-none">
-                        <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Eaibot SMART Base with UFactory xArm 6</h3>
-                            <p class="text-gray-400 mb-4">Two different robotic company integrating an application found in Amazon Warehouse</p>
+                        <div class="p-6 pointer-events-none flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Eaibot SMART Base with UFactory xArm 6</h3>
+                                <p class="text-gray-400 mb-4">Robotic integration found in Amazon Warehouse environments.</p>
+                            </div>
+                            <i data-lucide="video" class="text-blue-400 w-5 h-5 flex-shrink-0 mt-1"></i>
                         </div>
                     </div>
 
-                    <!-- Project Card 5 -->
-                    <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
+                    <!-- Card 5 -->
+                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal"
+                         data-video-src="https://github.com/Koushikraj-2005/skoushikraj.github.io/raw/main/ColorSorting.mp4">
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/ColorSizeSorting.jpg?raw=true" alt="Project Five" class="w-full h-48 object-cover pointer-events-none">
-                        <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Color and Size Sorting with ROS and Python API</h3>
-                            <p class="text-gray-400 mb-4">Dobot and UFactory integrates to sort the objects with a camera</p>
+                        <div class="p-6 pointer-events-none flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Color and Size Sorting</h3>
+                                <p class="text-gray-400 mb-4">Dobot and UFactory integrates to sort objects with a camera.</p>
+                            </div>
+                            <i data-lucide="video" class="text-blue-400 w-5 h-5 flex-shrink-0 mt-1"></i>
                         </div>
                     </div>
 
@@ -195,8 +214,8 @@
                     <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/LocalRemoteDesktopApplication.jpg?raw=true" alt="Project Six" class="w-full h-48 object-cover pointer-events-none">
                         <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Local Network Remote Desktop Application</h3>
-                            <p class="text-gray-400 mb-4">An Application which enables a remote desktop computing within the same network</p>
+                            <h3 class="text-xl font-bold mb-2">Local Network Remote Desktop</h3>
+                            <p class="text-gray-400 mb-4">Remote desktop computing within the same local network.</p>
                         </div>
                     </div>
 
@@ -205,7 +224,7 @@
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/DataMonitoringDashboard.png?raw=true" alt="Project Seven" class="w-full h-48 object-cover pointer-events-none">
                         <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">Data Logging Application</h3>
-                            <p class="text-gray-400 mb-4">An Application which logs the data sent by PLC and displays it in a dashboard</p>
+                            <p class="text-gray-400 mb-4">Logs data sent by PLC and displays it in a dashboard.</p>
                         </div>
                     </div>                    
 
@@ -214,20 +233,24 @@
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/ReemConnect.jpg?raw=true" alt="Project Eight" class="w-full h-48 object-cover pointer-events-none">
                         <div class="p-6 pointer-events-none">
                             <h3 class="text-xl font-bold mb-2">IoT Device - Reem Connect</h3>
-                            <p class="text-gray-400 mb-4">A normal Raspberry Pi is converted to a worldwide access device which enables the industrial users to monitor and access the status of the machine from anywhere in the world with their phone!</p>
+                            <p class="text-gray-400 mb-4">Worldwide access device for industrial machine monitoring.</p>
                         </div>
                     </div>
 
-                    <!-- Project Card 9 WITH ALIGNED SEMI-FINALIST BADGE -->
-                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal">
+                    <!-- Card 9 -->
+                    <div class="project-card relative bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-400/20 transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer reveal" 
+                         data-video-src="https://github.com/Koushikraj-2005/skoushikraj.github.io/raw/main/RoverAutonomous.mp4">
                         <div class="ribbon-container bg-yellow-500 text-gray-900 font-bold py-1 text-[10px] uppercase tracking-widest text-center">
                             <span class="relative z-20">Semi-Finalist</span>
                             <div class="absolute inset-0 shine-effect opacity-30"></div>
                         </div>                    
                         <img src="https://github.com/Koushikraj-2005/skoushikraj.github.io/blob/main/CatRover.jpg?raw=true" alt="Project Nine" class="w-full h-48 object-cover pointer-events-none">
-                        <div class="p-6 pointer-events-none">
-                            <h3 class="text-xl font-bold mb-2">Caterpillar Autonomy Challenge</h3>
-                            <p class="text-gray-400 mb-4">A rover which detects the rocks and craters and avoids them by moving in a different direction. A robotic arm will be used to excavate the arm and construct a berm in a specified area.</p>
+                        <div class="p-6 pointer-events-none flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Caterpillar Autonomy Challenge</h3>
+                                <p class="text-gray-400 mb-4">Autonomous rover detecting obstacles and constructing berms.</p>
+                            </div>
+                            <i data-lucide="video" class="text-blue-400 w-5 h-5 flex-shrink-0 mt-1"></i>
                         </div>
                     </div>                     
 
@@ -241,24 +264,13 @@
                 <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
                 <div class="max-w-4xl mx-auto">
                     <div class="flex flex-wrap justify-center gap-4">
-                        <!-- Primary Robotics Skills -->
                         <span class="bg-blue-600/20 text-blue-400 border border-blue-400/30 text-lg font-medium px-4 py-2 rounded-full">Robotic Operating System (ROS/ROS2)</span>
                         <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Autonomous Navigation</span>
                         <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Computer Vision (YOLOv8 & OpenCV)</span>
                         <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">SLAM & Path Planning</span>
-                        <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Logical Navigation</span>
-                        
-                        <!-- Programming & Software -->
                         <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Python</span>
-                        <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">JAVA</span>
-                        <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">SolidWorks 3D Modelling</span>
-                        
-                        <!-- Industrial & Hardware -->
                         <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Industrial IoT (IIoT)</span>
-                        <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Embedded Systems (Raspberry Pi)</span>
                         <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Ladder Logic (PLC)</span>
-                        <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">MySQL & Data Logging</span>
-                        <span class="bg-gray-700 text-gray-300 text-lg font-medium px-4 py-2 rounded-full">Hardware Prototyping</span>
                     </div>
                 </div>
             </div>
@@ -270,7 +282,7 @@
                 <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
                 <div class="max-w-4xl mx-auto text-center">
                     <p class="text-gray-400 mb-8 text-lg">
-                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me.
+                        Reach out to discuss new projects or creative robotics opportunities.
                     </p>
                     <div class="flex flex-col md:flex-row justify-center items-center gap-8">
                         <a href="mailto:skoushikrajskkr@gmail.com" class="flex items-center gap-3 text-lg text-gray-300 hover:text-blue-400 transition-colors">
@@ -289,21 +301,18 @@
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800/50 py-6">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <p>&copy; 2026 S Koushikraj. All Rights Reserved.</p>
-        </div>
+    <footer class="bg-gray-800/50 py-6 text-center text-gray-400">
+        <p>&copy; 2026 S Koushikraj. All Rights Reserved.</p>
     </footer>
 
-    <!-- Project Modal -->
+    <!-- Modal -->
     <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden opacity-0">
         <div class="bg-gray-800 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row overflow-hidden scale-95 transform">
-            <div class="w-full md:w-1/2">
+            <div class="w-full md:w-1/2 relative bg-black flex items-center justify-center min-h-[300px]">
                 <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+                <video id="modal-video" controls muted playsinline preload="auto" class="hidden w-full h-full max-h-[500px]"></video>
             </div>
             <div class="w-full md:w-1/2 p-8 flex flex-col">
                 <h3 id="modal-title" class="text-2xl font-bold mb-4"></h3>
@@ -313,207 +322,124 @@
         </div>
     </div>
 
-    <!-- AI Chat Assistant UI -->
+    <!-- AI Chat -->
     <div id="ai-chat-container" class="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
-        <!-- Chat Window -->
         <div id="chat-window" class="hidden w-80 md:w-96 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl overflow-hidden flex flex-col mb-4 transform scale-90 opacity-0 origin-bottom-right transition-all duration-300">
             <div class="bg-blue-600 p-4 flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                    <i data-lucide="bot" class="w-5 h-5"></i>
-                    <span class="font-bold">Robotics Assistant</span>
-                </div>
-                <button onclick="toggleChat()" class="hover:bg-blue-700 p-1 rounded transition-colors">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
+                <div class="flex items-center gap-2 font-bold"><i data-lucide="bot" class="w-5 h-5"></i> Assistant</div>
+                <button onclick="toggleChat()"><i data-lucide="x" class="w-5 h-5"></i></button>
             </div>
             <div id="chat-messages" class="flex-grow h-80 overflow-y-auto p-4 space-y-4 text-sm bg-gray-900/50">
-                <div class="bg-gray-700 p-3 rounded-lg max-w-[85%] self-start">
-                    Hi! I'm Koushik's AI assistant. Ask me anything about his robotics projects or skills!
-                </div>
+                <div class="bg-gray-700 p-3 rounded-lg max-w-[85%]">Hi! Ask me anything about Koushik's robotics work!</div>
             </div>
             <div class="p-4 border-t border-gray-700 flex gap-2 bg-gray-800">
-                <input type="text" id="chat-input" placeholder="Ask about ROS, Rover, or projects..." class="flex-grow bg-gray-700 border-none rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none">
-                <button id="send-btn" class="bg-blue-600 hover:bg-blue-700 p-2 rounded-lg transition-colors">
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                </button>
+                <input type="text" id="chat-input" placeholder="Ask about ROS..." class="flex-grow bg-gray-700 border-none rounded-lg px-3 py-2 text-sm text-white focus:ring-1 focus:ring-blue-500 outline-none">
+                <button id="send-btn" class="bg-blue-600 p-2 rounded-lg"><i data-lucide="send" class="w-4 h-4"></i></button>
             </div>
         </div>
-        <!-- Toggle Button -->
-        <button onclick="toggleChat()" class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition-all hover:scale-110">
+        <button onclick="toggleChat()" class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all">
             <i data-lucide="message-square" class="text-white"></i>
         </button>
     </div>
 
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
 
         const apiKey = ""; 
         const modelName = "gemini-2.5-flash-preview-09-2025";
-        
-        const koushikContext = `
-            You are a helpful AI assistant for S Koushikraj's portfolio. 
-            Background: S Koushikraj is an aspiring Robotic Engineer specializing in ROS, ROS2, and programming robots.
-            Skills: ROS, ROS2, Python, JAVA, Ladder Logic, SolidWorks, MySQL, YOLOv8, Autonomous Navigation, Computer Vision (OpenCV), SLAM, Path Planning, Industrial IoT, Embedded Systems (Raspberry Pi), Hardware Prototyping.
-            Projects: 
-            1. Rover from Trash: Space Club challenge during COVID summer break.
-            2. Wireless Teleoperation: Two cobots controlled via separate arms in a network.
-            3. Force Detection with ROS: Torque sensor based constant force process.
-            4. EAIBOT SMART Base: Integration with UFactory xArm 6.
-            5. Color/Size Sorting: Dobot/UFactory integration with camera/vision.
-            6. Remote Desktop: Local network application.
-            7. Data Logging: Dashboard for PLC data.
-            8. Reem Connect: IoT device using Raspberry Pi for remote industrial monitoring.
-            9. Caterpillar Autonomy: Rover avoiding craters/rocks and excavating berms.
-            
-            Guidelines: Be professional, concise, and enthusiastic about robotics. If you don't know an answer, suggest they email him at skoushikrajskkr@gmail.com.
-        `;
+        const koushikContext = `Assistant for S Koushikraj, Robotic Engineer. Skills: ROS, Python, YOLOv8, etc. Projects: Rover from Trash, Teleoperation, Force Detection, etc.`;
 
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        const projectCards = document.querySelectorAll('.project-card');
         const modal = document.getElementById('project-modal');
         const modalImg = document.getElementById('modal-img');
+        const modalVideo = document.getElementById('modal-video');
         const modalTitle = document.getElementById('modal-title');
         const modalDescription = document.getElementById('modal-description');
         const closeModalButton = document.getElementById('close-modal-button');
 
         const openModal = (card) => {
-            const imgSrc = card.querySelector('img').src;
-            const title = card.querySelector('h3').innerText;
-            const description = card.querySelector('p').innerText;
-            modalImg.src = imgSrc;
-            modalTitle.innerText = title;
-            modalDescription.innerText = description;
+            const videoSrc = card.getAttribute('data-video-src');
+            modalTitle.innerText = card.querySelector('h3').innerText;
+            modalDescription.innerText = card.querySelector('p').innerText;
+
+            if (videoSrc && videoSrc.trim() !== "") {
+                modalImg.classList.add('hidden');
+                modalVideo.classList.remove('hidden');
+                
+                // Set source and ensure it's muted before loading
+                modalVideo.src = videoSrc;
+                modalVideo.muted = true;
+                modalVideo.load();
+                
+                // Delay play slightly to ensure DOM is ready
+                setTimeout(() => {
+                    modalVideo.play().catch(e => console.log("Auto-play blocked or source issue:", e));
+                }, 100);
+            } else {
+                modalVideo.classList.add('hidden');
+                modalVideo.pause();
+                modalVideo.src = "";
+                modalImg.classList.remove('hidden');
+                modalImg.src = card.querySelector('img').src;
+            }
+
             modal.classList.remove('hidden');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modal.querySelector('div').classList.remove('scale-95');
-            }, 10);
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.querySelector('div').classList.remove('scale-95'); }, 10);
         };
 
         const closeModal = () => {
+            modalVideo.pause();
+            modalVideo.src = "";
             modal.classList.add('opacity-0');
             modal.querySelector('div').classList.add('scale-95');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300);
+            setTimeout(() => modal.classList.add('hidden'), 300);
         };
 
-        projectCards.forEach(card => {
-            card.addEventListener('click', () => openModal(card));
-        });
-
+        document.querySelectorAll('.project-card').forEach(card => card.addEventListener('click', () => openModal(card)));
         closeModalButton.addEventListener('click', closeModal);
         modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-        window.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
 
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('visible'));
         }, { threshold: 0.1 });
-        revealElements.forEach(element => revealObserver.observe(element));
-
-        const chatWindow = document.getElementById('chat-window');
-        const chatMessages = document.getElementById('chat-messages');
-        const chatInput = document.getElementById('chat-input');
-        const sendBtn = document.getElementById('send-btn');
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
         function toggleChat() {
-            const isHidden = chatWindow.classList.contains('hidden');
-            if (isHidden) {
-                chatWindow.classList.remove('hidden');
-                setTimeout(() => {
-                    chatWindow.classList.remove('opacity-0', 'scale-95');
-                }, 10);
+            const win = document.getElementById('chat-window');
+            if (win.classList.contains('hidden')) {
+                win.classList.remove('hidden');
+                setTimeout(() => win.classList.remove('opacity-0', 'scale-95'), 10);
             } else {
-                chatWindow.classList.add('opacity-0', 'scale-95');
-                setTimeout(() => {
-                    chatWindow.classList.add('hidden');
-                }, 300);
-            }
-        }
-
-        async function callGemini(userQuery) {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
-            const payload = {
-                contents: [{ parts: [{ text: userQuery }] }],
-                systemInstruction: { parts: [{ text: koushikContext }] }
-            };
-
-            let retryCount = 0;
-            const maxRetries = 5;
-
-            while (retryCount < maxRetries) {
-                try {
-                    const response = await fetch(url, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-                    
-                    if (!response.ok) throw new Error('API request failed');
-                    
-                    const result = await response.json();
-                    return result.candidates?.[0]?.content?.parts?.[0]?.text;
-                } catch (error) {
-                    retryCount++;
-                    if (retryCount >= maxRetries) throw error;
-                    await new Promise(resolve => setTimeout(resolve, Math.pow(2, retryCount) * 1000));
-                }
+                win.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => win.classList.add('hidden'), 300);
             }
         }
 
         async function handleSendMessage() {
-            const query = chatInput.value.trim();
-            if (!query) return;
-
-            const userMsg = document.createElement('div');
-            userMsg.className = "bg-blue-600 p-3 rounded-lg max-w-[85%] self-end text-white";
-            userMsg.innerText = query;
-            chatMessages.appendChild(userMsg);
-            chatInput.value = '';
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            const loadingMsg = document.createElement('div');
-            loadingMsg.className = "bg-gray-700 p-3 rounded-lg max-w-[85%] self-start italic animate-pulse";
-            loadingMsg.innerText = "Thinking...";
-            chatMessages.appendChild(loadingMsg);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
+            const input = document.getElementById('chat-input');
+            const msg = input.value.trim();
+            if (!msg) return;
+            const chatMessages = document.getElementById('chat-messages');
+            chatMessages.innerHTML += `<div class="bg-blue-600 p-3 rounded-lg max-w-[85%] self-end ml-auto text-white">${msg}</div>`;
+            input.value = "";
+            chatMessages.innerHTML += `<div id="loading" class="bg-gray-700 p-3 rounded-lg max-w-[85%] italic animate-pulse">Thinking...</div>`;
+            
             try {
-                const response = await callGemini(query);
-                loadingMsg.remove();
-                
-                const aiMsg = document.createElement('div');
-                aiMsg.className = "bg-gray-700 p-3 rounded-lg max-w-[85%] self-start";
-                aiMsg.innerText = response || "I'm sorry, I couldn't process that.";
-                chatMessages.appendChild(aiMsg);
-            } catch (error) {
-                loadingMsg.innerText = "Error connecting to AI. Please try again later.";
-                loadingMsg.classList.remove('animate-pulse');
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ contents: [{ parts: [{ text: msg }] }], systemInstruction: { parts: [{ text: koushikContext }] } })
+                });
+                const result = await response.json();
+                document.getElementById('loading').remove();
+                const aiText = result.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, try again.";
+                chatMessages.innerHTML += `<div class="bg-gray-700 p-3 rounded-lg max-w-[85%]">${aiText}</div>`;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            } catch (e) {
+                document.getElementById('loading').innerText = "Connection error.";
             }
-            chatMessages.scrollTop = chatMessages.scrollHeight;
         }
-
-        sendBtn.addEventListener('click', handleSendMessage);
-        chatInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') handleSendMessage(); });
+        document.getElementById('send-btn').addEventListener('click', handleSendMessage);
+        document.getElementById('chat-input').addEventListener('keypress', e => e.key === 'Enter' && handleSendMessage());
     </script>
 </body>
 </html>
