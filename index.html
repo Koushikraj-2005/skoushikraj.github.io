@@ -64,7 +64,7 @@
             pointer-events: none;
         }
 
-        /* New Mobile Menu Animation Styles */
+        /* Mobile Menu Animation Styles */
         #mobile-menu {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateY(-20px);
@@ -91,7 +91,7 @@
 </head>
 <body class="bg-gray-900 text-white antialiased">
 
-    <!-- Header & Navigation with Smooth Blur -->
+    <!-- Header & Navigation -->
     <header class="bg-gray-900/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-white/5 shadow-xl">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">SK</a>
@@ -171,7 +171,7 @@
                 <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
                 <div class="max-w-4xl mx-auto space-y-6">
 
-                    <!-- Item 2 -->
+                    <!-- Item 1 -->
                     <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700/50 hover:border-blue-500/30 transition-colors">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                             <div>
@@ -184,7 +184,7 @@
                         </div>
                     </div>
 
-                    <!-- Item 4 -->
+                    <!-- Item 2 -->
                     <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700/50 hover:border-blue-500/30 transition-colors">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                             <div>
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 5 -->
+                    <!-- Item 3 -->
                     <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700/50 hover:border-blue-500/30 transition-colors">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                             <div>
@@ -205,6 +205,18 @@
                             </div>
                             <div class="bg-blue-500/20 text-blue-300 px-5 py-2 rounded-full border border-blue-400/30 text-sm font-semibold shadow-inner whitespace-nowrap">
                                 May - June 2024
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700/50 hover:border-blue-500/30 transition-colors">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-1">Corporate Intern</p>
+                                <h3 class="text-xl font-bold text-blue-400">Caterpillar India, Bangalore</h3>
+                            </div>
+                            <div class="bg-blue-500/20 text-blue-300 px-5 py-2 rounded-full border border-blue-400/30 text-sm font-semibold shadow-inner whitespace-nowrap">
+                                February 2026 - Present
                             </div>
                         </div>
                     </div>
@@ -492,17 +504,15 @@
         Skills: ROS, ROS2, Python, YOLOv8, SOLIDWORKS, Industrial IoT (IIoT), Raspberry Pi, HMI/SCADA (Pro-Face), and PLC (OMRON). 
         Experiences: Multiple internships at Autobots Inc. and Reem Engineering Enterprises (2024-2025). 
         Achievements: (School) 1st Runner Up for Making a Mars Rover from Trash Contest (2020) collaborating with NASA, NASA/IASC Asteroid Search (2019-2020), NASA Satellite Earth Capturing (2019). (College) 1st Runner Up in SDG Hack-a-thon at Chennai Institute of Technology.
-        Projects: 1. Rover from Trash (SPACE Club Runner Up). 2. Bratt Pan Design for Archer Integrated Services. 3. Wireless Teleoperation Technology. 4. Force Detection with ROS2. 5. EAIBOT SMART Base with UFactory xArm 6 integration. 6. Color and Size Sorting system. 7. Local Network Remote Desktop system. 8. PLC Data Logging Application running at Vishal Agro Farms and Kalyani Poultry. 9. Reem Connect IoT Gateway running at Sengam Feeds. 10. Caterpillar Autonomy Challenge Semi-Finalist. 11. Agitator Design for SJ Industries. 12. Worldwide appliance control system.`;
+        Projects: 1. Rover from Trash (SBOAJC SPACE Club Runner Up). 2. Bratt Pan Design for Archer Integrated Services. 3. Wireless Teleoperation Technology at Sastra University. 4. Force Detection with ROS2 at BARC. 5. EAIBOT SMART Base with UFactory xArm 6 integration. 6. Color and Size Sorting system at Amrita Vishwa Vidypeetham. 7. Local Network Remote Desktop system at Amrita Vishwa Vidyapeetham. 8. PLC Data Logging Application for Reem Engineering Enterprises (Vishal Agro Farms / Kalyani Poultry). 9. Reem Connect IoT Gateway for Reem Engineering Enterprises (Sengam Feeds). 10. Caterpillar Autonomy Challenge Semi-Finalist. 11. Agitator Design for SJ Industries. 12. Worldwide appliance control system at SBOAJC.`;
 
-        // Updated Mobile Menu Logic with Animations
+        // Mobile Menu Logic
         const menuBtn = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         
         menuBtn.addEventListener('click', () => {
             const isOpen = mobileMenu.classList.toggle('active');
-            
-            // Toggle icons with a quick flip animation
             menuBtn.style.transform = 'rotate(180deg)';
             setTimeout(() => {
                 if (isOpen) {
@@ -515,7 +525,6 @@
             }, 150);
         });
 
-        // Close menu when clicking a link
         document.querySelectorAll('.mobile-link').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
@@ -539,13 +548,11 @@
             if (videoSrc && videoSrc.trim() !== "") {
                 modalImg.classList.add('hidden');
                 modalVideo.classList.remove('hidden');
-                
                 modalVideo.src = videoSrc;
                 modalVideo.muted = true;
                 modalVideo.load();
-                
                 setTimeout(() => {
-                    modalVideo.play().catch(e => console.log("Auto-play blocked or source issue:", e));
+                    modalVideo.play().catch(e => console.log("Auto-play issue:", e));
                 }, 100);
             } else {
                 modalVideo.classList.add('hidden');
@@ -611,7 +618,8 @@
                 chatMessages.innerHTML += `<div class="bg-gray-700 p-3 rounded-lg max-w-[85%]">${aiText}</div>`;
                 chatMessages.scrollTop = chatMessages.scrollHeight;
             } catch (e) {
-                if(document.getElementById(loadingId)) document.getElementById(loadingId).innerText = "Connection error.";
+                const loadingEl = document.getElementById(loadingId);
+                if(loadingEl) loadingEl.innerText = "Connection error.";
             }
         }
         document.getElementById('send-btn').addEventListener('click', handleSendMessage);
@@ -619,4 +627,3 @@
     </script>
 </body>
 </html>
-
