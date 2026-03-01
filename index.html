@@ -83,6 +83,7 @@
 </head>
 <body class="bg-gray-900 text-white antialiased">
 
+    <!-- Header & Navigation -->
     <header class="bg-gray-900/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-white/5 shadow-xl">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">SK</a>
@@ -98,6 +99,7 @@
                 <i data-lucide="menu" id="menu-icon"></i>
             </button>
         </div>
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden overflow-hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/5 shadow-2xl">
             <div class="flex flex-col px-6 py-6 space-y-4">
                 <a href="#about" class="mobile-link text-lg font-medium text-gray-300 hover:text-blue-400 transition-colors" style="transition-delay: 100ms;">About</a>
@@ -124,9 +126,6 @@
                     <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
                         Get In Touch
                     </a>
-                    <button onclick="toggleChat()" class="bg-gray-800 hover:bg-gray-700 text-blue-400 font-bold py-3 px-8 rounded-full border border-blue-400/30 transition-all flex items-center justify-center gap-2">
-                        <i data-lucide="bot"></i> Ask My AI Assistant
-                    </button>
                 </div>
             </div>
         </section>
@@ -415,6 +414,7 @@
         <p>&copy; 2026 S Koushikraj. All Rights Reserved.</p>
     </footer>
 
+    <!-- Project Modal -->
     <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden opacity-0">
         <div class="bg-gray-800 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col md:flex-row overflow-hidden scale-95 transform">
             <div class="w-full md:w-1/2 relative bg-black flex items-center justify-center min-h-[300px]">
@@ -429,36 +429,8 @@
         </div>
     </div>
 
-    <div id="ai-chat-container" class="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
-        <div id="chat-window" class="hidden w-80 md:w-96 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl overflow-hidden flex flex-col mb-4 transform scale-90 opacity-0 origin-bottom-right transition-all duration-300">
-            <div class="bg-blue-600 p-4 flex justify-between items-center">
-                <div class="flex items-center gap-2 font-bold"><i data-lucide="bot" class="w-5 h-5"></i> Assistant</div>
-                <button onclick="toggleChat()"><i data-lucide="x" class="w-5 h-5"></i></button>
-            </div>
-            <div id="chat-messages" class="flex-grow h-80 overflow-y-auto p-4 space-y-4 text-sm bg-gray-900/50">
-                <div class="bg-gray-700 p-3 rounded-lg max-w-[85%]">Hi! Ask me anything about Koushik's robotics work!</div>
-            </div>
-            <div class="p-4 border-t border-gray-700 flex gap-2 bg-gray-800">
-                <input type="text" id="chat-input" placeholder="Ask about ROS..." class="flex-grow bg-gray-700 border-none rounded-lg px-3 py-2 text-sm text-white focus:ring-1 focus:ring-blue-500 outline-none">
-                <button id="send-btn" class="bg-blue-600 p-2 rounded-lg"><i data-lucide="send" class="w-4 h-4"></i></button>
-            </div>
-        </div>
-        <button onclick="toggleChat()" class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all">
-            <i data-lucide="message-square" class="text-white"></i>
-        </button>
-    </div>
-
     <script>
         lucide.createIcons();
-
-        // FOR GITHUB: Paste your key here. Use Method 1 (HTTP Restrictions) in Google Console to secure it.
-        const apiKey = "AIzaSyAIlVvSP2Cz-1rzK3wi1pyUdXdKSCZaEAM"; 
-        const modelName = "gemini-2.5-flash-preview-09-2025";
-        const koushikContext = `Assistant for S Koushikraj, Robotic Engineer. 
-        Skills: ROS, ROS2, Python, YOLOv8, SOLIDWORKS, Industrial IoT (IIoT), Raspberry Pi, HMI/SCADA (Pro-Face), and PLC (OMRON). 
-        Experiences: Corporate Intern at Caterpillar India, Bangalore (Feb 2026-Present). Multiple internships at Autobots Inc. (2024-2025). 
-        Achievements: (School) 1st Runner Up for Mars Rover from Trash Contest (2020) collaborating with NASA, NASA/IASC Asteroid Search (2019-2020), NASA Satellite Earth Capturing (2019). (College) 1st Runner Up in SDG Hack-a-thon at Chennai Institute of Technology.
-        Projects: 1. Rover from Trash (SBOAJC SPACE Club Runner Up). 2. Bratt Pan Design for Archer Integrated Services. 3. Wireless Teleoperation Technology at Sastra University. 4. Force Detection with ROS2 at BARC. 5. EAIBOT SMART Base with UFactory xArm 6 integration. 6. Color and Size Sorting system at Amrita Vishwa Vidypeetham. 7. Local Network Remote Desktop system at Amrita Vishwa Vidyapeetham. 8. PLC Data Logging Application for Reem Engineering Enterprises (Vishal Agro Farms / Kalyani Poultry). 9. Reem Connect IoT Gateway for Reem Engineering Enterprises (Sengam Feeds). 10. Caterpillar Autonomy Challenge Semi-Finalist. 11. Agitator Design for SJ Industries. 12. Worldwide appliance control system at SBOAJC.`;
 
         // Mobile Menu Logic
         const menuBtn = document.getElementById('mobile-menu-button');
@@ -487,6 +459,7 @@
             });
         });
 
+        // Project Modal Logic
         const modal = document.getElementById('project-modal');
         const modalImg = document.getElementById('modal-img');
         const modalVideo = document.getElementById('modal-video');
@@ -532,56 +505,11 @@
         closeModalButton.addEventListener('click', closeModal);
         modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
+        // Scroll Reveal Animation
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('visible'));
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-        function toggleChat() {
-            const win = document.getElementById('chat-window');
-            if (win.classList.contains('hidden')) {
-                win.classList.remove('hidden');
-                setTimeout(() => win.classList.remove('opacity-0', 'scale-95'), 10);
-            } else {
-                win.classList.add('opacity-0', 'scale-95');
-                setTimeout(() => win.classList.add('hidden'), 300);
-            }
-        }
-
-        async function handleSendMessage() {
-            const input = document.getElementById('chat-input');
-            const msg = input.value.trim();
-            if (!msg) return;
-            const chatMessages = document.getElementById('chat-messages');
-            chatMessages.innerHTML += `<div class="bg-blue-600 p-3 rounded-lg max-w-[85%] self-end ml-auto text-white">${msg}</div>`;
-            input.value = "";
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            const loadingId = 'loading-' + Date.now();
-            chatMessages.innerHTML += `<div id="${loadingId}" class="bg-gray-700 p-3 rounded-lg max-w-[85%] italic animate-pulse">Thinking...</div>`;
-            
-            try {
-                // Method 1: Direct Google API call
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`, {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({ 
-                        contents: [{ parts: [{ text: msg }] }], 
-                        systemInstruction: { parts: [{ text: koushikContext }] } 
-                    })
-                });
-                const result = await response.json();
-                document.getElementById(loadingId).remove();
-                const aiText = result.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, try again.";
-                chatMessages.innerHTML += `<div class="bg-gray-700 p-3 rounded-lg max-w-[85%]">${aiText}</div>`;
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            } catch (e) {
-                const loadingEl = document.getElementById(loadingId);
-                if(loadingEl) loadingEl.innerText = "Connection error.";
-            }
-        }
-        document.getElementById('send-btn').addEventListener('click', handleSendMessage);
-        document.getElementById('chat-input').addEventListener('keypress', e => e.key === 'Enter' && handleSendMessage());
     </script>
 </body>
 </html>
